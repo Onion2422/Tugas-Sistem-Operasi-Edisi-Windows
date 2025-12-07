@@ -1,0 +1,231 @@
+IPCONFIG /ALL 
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Acer_Lite_14
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-0B
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::7eb:717:5fc2:ed5b%11(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 688521255
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-72-91-2A-A8-59-5F-92-46-18
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : A8-59-5F-92-46-19
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : AA-59-5F-92-46-18
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Wireless-AC 9560 160MHz
+   Physical Address. . . . . . . . . : A8-59-5F-92-46-18
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2404:c0:496d:7daa:4b72:1ebd:41e0:4420(Preferred) 
+   Temporary IPv6 Address. . . . . . : 2404:c0:496d:7daa:9088:1ec3:2859:e429(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::679a:974:fac5:80%12(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.78.90.80(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Sunday, 07 December 2025 11:55:00
+   Lease Expires . . . . . . . . . . : Sunday, 07 December 2025 17:26:21
+   Default Gateway . . . . . . . . . : fe80::e052:50ff:fe08:48f1%12
+                                       10.78.90.27
+   DHCP Server . . . . . . . . . . . : 10.78.90.27
+   DHCPv6 IAID . . . . . . . . . . . : 128473439
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-72-91-2A-A8-59-5F-92-46-18
+   DNS Servers . . . . . . . . . . . : 10.78.90.27
+                                       2404:c0:496d:7daa::c3
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+TEST PING INTTERNET 
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=229ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=120ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=78ms TTL=112
+Reply from 8.8.8.8: bytes=32 time=102ms TTL=112
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 78ms, Maximum = 229ms, Average = 132ms
+TEST PING WEBSITE 
+
+Pinging google.com [2404:6800:4003:c11::71] with 32 bytes of data:
+Reply from 2404:6800:4003:c11::71: time=83ms 
+Reply from 2404:6800:4003:c11::71: time=88ms 
+Reply from 2404:6800:4003:c11::71: time=159ms 
+Reply from 2404:6800:4003:c11::71: time=77ms 
+
+Ping statistics for 2404:6800:4003:c11::71:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 77ms, Maximum = 159ms, Average = 101ms
+TRACE ROUTE 
+
+Tracing route to google.com [2404:6800:4003:c11::71]
+over a maximum of 30 hops:
+
+  1     7 ms     4 ms     2 ms  2404:c0:496d:7daa::c3 
+  2    67 ms    26 ms    40 ms  fd00:aa:bb:111::1c 
+  3    55 ms    28 ms    33 ms  fd00:aa:bb:3115::1 
+  4    70 ms    27 ms    33 ms  fd00:aa:bb:18::2a 
+  5    72 ms    27 ms    31 ms  fd00:aa:bb:18::1d 
+  6    73 ms    48 ms    35 ms  2001:4488:700:1::1 
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+  9   194 ms    90 ms    80 ms  2001:df0:2400:181::1 
+ 10    77 ms    75 ms    79 ms  2404:6800:8341:c0::1 
+ 11    91 ms    69 ms    84 ms  2404:6800:8341:c0::1 
+ 12   184 ms    83 ms    77 ms  2001:4860:0:1::2260 
+ 13   153 ms    70 ms    85 ms  2001:4860:0:1::7e96 
+ 14   175 ms    87 ms    77 ms  2001:4860::c:4003:1cb9 
+ 15     *        *        *     Request timed out.
+ 16     *        *        *     Request timed out.
+ 17     *        *        *     Request timed out.
+ 18     *        *        *     Request timed out.
+ 19     *        *        *     Request timed out.
+ 20     *        *        *     Request timed out.
+ 21     *        *        *     Request timed out.
+ 22     *        *        *     Request timed out.
+ 23     *        *        *     Request timed out.
+ 24     *        *        *     Request timed out.
+ 25   185 ms    84 ms    81 ms  se-in-f113.1e100.net [2404:6800:4003:c11::71] 
+
+Trace complete.
+NETSTAT -AN 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:5357           0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49670          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49680          0.0.0.0:0              LISTENING
+  TCP    10.78.90.80:139        0.0.0.0:0              LISTENING
+  TCP    10.78.90.80:54584      10.78.90.27:53         FIN_WAIT_2
+  TCP    10.78.90.80:55925      20.189.173.15:443      ESTABLISHED
+  TCP    10.78.90.80:56660      10.78.90.27:53         FIN_WAIT_2
+  TCP    10.78.90.80:56750      10.78.90.27:53         FIN_WAIT_2
+  TCP    10.78.90.80:59090      104.16.102.112:443     ESTABLISHED
+  TCP    10.78.90.80:60044      10.78.90.27:53         FIN_WAIT_2
+  TCP    10.78.90.80:61578      10.78.90.27:53         FIN_WAIT_2
+  TCP    10.78.90.80:65035      140.82.112.25:443      ESTABLISHED
+  TCP    127.0.0.1:12072        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:44950        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:44960        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:49676        127.0.0.1:49677        ESTABLISHED
+  TCP    127.0.0.1:49677        127.0.0.1:49676        ESTABLISHED
+  TCP    127.0.0.1:49678        127.0.0.1:49679        ESTABLISHED
+  TCP    127.0.0.1:49679        127.0.0.1:49678        ESTABLISHED
+  TCP    127.0.0.1:64276        127.0.0.1:64277        ESTABLISHED
+  TCP    127.0.0.1:64277        127.0.0.1:64276        ESTABLISHED
+  TCP    192.168.56.1:139       0.0.0.0:0              LISTENING
+  TCP    [::]:135               [::]:0                 LISTENING
+  TCP    [::]:445               [::]:0                 LISTENING
+  TCP    [::]:5357              [::]:0                 LISTENING
+  TCP    [::]:49664             [::]:0                 LISTENING
+  TCP    [::]:49665             [::]:0                 LISTENING
+  TCP    [::]:49666             [::]:0                 LISTENING
+  TCP    [::]:49669             [::]:0                 LISTENING
+  TCP    [::]:49670             [::]:0                 LISTENING
+  TCP    [::]:49680             [::]:0                 LISTENING
+  TCP    [::1]:24642            [::]:0                 LISTENING
+  TCP    [::1]:49671            [::]:0                 LISTENING
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:49428  [2603:1040:a06:6::]:443  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:50407  [2606:4700::6810:6770]:443  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:56726  [2a06:98c1:3108::ac40:94eb]:443  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:57736  [2603:1040:a06:6::]:443  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:58938  [2404:c0:496d:7daa::c3]:53  FIN_WAIT_2
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:59514  [2404:c0:496d:7daa::c3]:53  FIN_WAIT_2
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:60767  [2a06:98c1:3107::6812:2715]:443  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:60817  [2404:6800:4003:c1a::bc]:5228  ESTABLISHED
+  TCP    [2404:c0:496d:7daa:9088:1ec3:2859:e429]:61810  [2404:c0:496d:7daa::c3]:53  FIN_WAIT_2
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:500            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:4500           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:54387          *:*                    
+  UDP    0.0.0.0:58202          0.0.0.94:443           
+  UDP    0.0.0.0:58753          0.0.0.94:443           
+  UDP    0.0.0.0:60805          0.0.0.91:443           
+  UDP    0.0.0.0:61162          0.0.0.104:443          
+  UDP    0.0.0.0:62739          0.0.0.95:443           
+  UDP    10.78.90.80:137        *:*                    
+  UDP    10.78.90.80:138        *:*                    
+  UDP    10.78.90.80:1900       *:*                    
+  UDP    10.78.90.80:49351      *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:49352        *:*                    
+  UDP    127.0.0.1:63547        127.0.0.1:63547        
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:49350     *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:500               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:4500              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:54388             *:*                    
+  UDP    [::]:58202             [2404:6800:4003:c00::5e]:443  
+  UDP    [::]:58753             [2404:6800:4003:c06::5e]:443  
+  UDP    [::]:60805             [2404:6800:4003:c1a::5b]:443  
+  UDP    [::]:61162             [2404:6800:4003:c05::68]:443  
+  UDP    [::]:62739             [2404:6800:4003:c04::5f]:443  
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:49349            *:*                    
+  UDP    [fe80::7eb:717:5fc2:ed5b%11]:1900  *:*                    
+  UDP    [fe80::7eb:717:5fc2:ed5b%11]:49347  *:*                    
+  UDP    [fe80::679a:974:fac5:80%12]:1900  *:*                    
+  UDP    [fe80::679a:974:fac5:80%12]:49348  *:*                    
